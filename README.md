@@ -1,1 +1,2 @@
-# architecture-insuretech
+# Проектирование highload-архитектуры для агрегатора страховых продуктов InsureTech
+
