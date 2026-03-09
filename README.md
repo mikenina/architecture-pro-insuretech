@@ -75,3 +75,8 @@ docker run --rm --network="host" \
 
 #### Целевая архитектура
 ![Схема С4 целевая](./Task_3/InsureTech_C4_сontainer-diagram_target.drawio.png)
+
+## Задание 4. Проектирование продажи ОСАГО
+[Анализ требований](./Task_4/Анализ%20требований.md)
+
+![Схема С4 целевая](./Task_4/InsureTech_C4_сontainer-diagram_osago.drawio.png)
