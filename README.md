@@ -68,3 +68,10 @@ docker run --rm --network="host" \
 ![hpa-mem_get-hpa](./Task_2/part_1/hpa-mem_get-hpa.png)
 
 ![hpa-rps_get-hpa](./Task_2/part_2/hpa-rps_get-hpa.png)
+
+## Задание 3. Переход на Event-Driven архитектуру
+
+[Анализ проблем и рисков](./Task_3/Анализ%20проблем%20и%20рисков.md)
+
+#### Целевая архитектура
+![Схема С4 целевая](./Task_3/InsureTech_C4_сontainer-diagram_target.drawio.png)
