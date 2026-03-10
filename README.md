@@ -80,3 +80,36 @@ docker run --rm --network="host" \
 [Анализ требований](./Task_4/Анализ%20требований.md)
 
 ![Схема С4 целевая](./Task_4/InsureTech_C4_сontainer-diagram_osago.drawio.png)
+
+## Задание 5. Проектирование GraphQL API
+[GraphQl](./Task_5/graphql)
+
+#### Получить клиента с документами
+```graphql
+query {
+  client(id: "123") {
+    id
+    name
+    documents {
+      id
+      type
+      number
+      expiryDate
+    }
+  }
+}
+```
+
+#### Получить только документы
+```graphql
+query {
+  clientDocuments(clientId: "123") {
+    id
+    type
+    number
+  }
+}
+```
+
+## Задание 6. Настройка Rate Limiting
+[nginx_rate_limiting](./Task_6/nginx_rate_limiting)
