@@ -82,7 +82,7 @@ docker run --rm --network="host" \
 ![Схема С4 целевая](./Task_4/InsureTech_C4_сontainer-diagram_osago.drawio.png)
 
 ## Задание 5. Проектирование GraphQL API
-[GraphQl](./Task_5/graphql)
+[GraphQl](Task_5/graph.graphql)
 
 #### Получить клиента с документами
 ```graphql
