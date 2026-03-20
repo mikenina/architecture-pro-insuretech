@@ -1,0 +1,25 @@
+http {
+    upstream backend_servers {
+        server backend1.example.com;
+        server backend2.example.com;
+        server backend3.example.com;
+    }
+
+    map $remote_addr $rate_limit_zone {
+        default "default_limit";
+        "192.168.1.100" "bad_partner";  # Партнерское API ходит с определенного ip
+    }
+
+    limit_req_zone $binary_remote_addr zone=default_limit:10m rate=100r/m;
+    limit_req_zone $binary_remote_addr zone=bad_partner:10m rate=10r/m;
+
+    server {
+        listen 80;
+
+        location / {
+            limit_req zone=$rate_limit_zone burst=10 nodelay;
+            limit_req_status 429;
+            proxy_pass http://backend_servers;
+        }
+    }
+}
